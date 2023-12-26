@@ -1,0 +1,14 @@
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/shell
+    username: demo
+    password: demo
+
+# disable console logging
+logging:
+  pattern:
+    console:
+

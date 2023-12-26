@@ -1,0 +1,959 @@
+[
+  {
+    "name": "com.sun.jna.Callback"
+  },
+  {
+    "name": "com.sun.jna.CallbackReference",
+    "methods": [
+      {
+        "name": "getCallback",
+        "parameterTypes": [
+          "java.lang.Class",
+          "com.sun.jna.Pointer",
+          "boolean"
+        ]
+      },
+      {
+        "name": "getFunctionPointer",
+        "parameterTypes": [
+          "com.sun.jna.Callback",
+          "boolean"
+        ]
+      },
+      {
+        "name": "getNativeString",
+        "parameterTypes": [
+          "java.lang.Object",
+          "boolean"
+        ]
+      },
+      {
+        "name": "initializeThread",
+        "parameterTypes": [
+          "com.sun.jna.Callback",
+          "com.sun.jna.CallbackReference$AttachOptions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.CallbackReference$AttachOptions"
+  },
+  {
+    "name": "com.sun.jna.FromNativeConverter",
+    "methods": [
+      {
+        "name": "nativeType",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.IntegerType",
+    "fields": [
+      {
+        "name": "value"
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.JNIEnv"
+  },
+  {
+    "name": "com.sun.jna.Native",
+    "methods": [
+      {
+        "name": "dispose",
+        "parameterTypes": []
+      },
+      {
+        "name": "fromNative",
+        "parameterTypes": [
+          "com.sun.jna.FromNativeConverter",
+          "java.lang.Object",
+          "java.lang.reflect.Method"
+        ]
+      },
+      {
+        "name": "fromNative",
+        "parameterTypes": [
+          "java.lang.Class",
+          "java.lang.Object"
+        ]
+      },
+      {
+        "name": "fromNative",
+        "parameterTypes": [
+          "java.lang.reflect.Method",
+          "java.lang.Object"
+        ]
+      },
+      {
+        "name": "nativeType",
+        "parameterTypes": [
+          "java.lang.Class"
+        ]
+      },
+      {
+        "name": "toNative",
+        "parameterTypes": [
+          "com.sun.jna.ToNativeConverter",
+          "java.lang.Object"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.Native$ffi_callback",
+    "methods": [
+      {
+        "name": "invoke",
+        "parameterTypes": [
+          "long",
+          "long",
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.NativeMapped",
+    "methods": [
+      {
+        "name": "toNative",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.Pointer",
+    "fields": [
+      {
+        "name": "peer"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.PointerType",
+    "fields": [
+      {
+        "name": "pointer"
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.Structure",
+    "fields": [
+      {
+        "name": "memory"
+      },
+      {
+        "name": "typeInfo"
+      }
+    ],
+    "methods": [
+      {
+        "name": "autoRead",
+        "parameterTypes": []
+      },
+      {
+        "name": "autoWrite",
+        "parameterTypes": []
+      },
+      {
+        "name": "getTypeInfo",
+        "parameterTypes": []
+      },
+      {
+        "name": "newInstance",
+        "parameterTypes": [
+          "java.lang.Class",
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.Structure$ByValue"
+  },
+  {
+    "name": "com.sun.jna.Structure$FFIType$FFITypes",
+    "fields": [
+      {
+        "name": "ffi_type_double"
+      },
+      {
+        "name": "ffi_type_float"
+      },
+      {
+        "name": "ffi_type_longdouble"
+      },
+      {
+        "name": "ffi_type_pointer"
+      },
+      {
+        "name": "ffi_type_sint16"
+      },
+      {
+        "name": "ffi_type_sint32"
+      },
+      {
+        "name": "ffi_type_sint64"
+      },
+      {
+        "name": "ffi_type_sint8"
+      },
+      {
+        "name": "ffi_type_uint16"
+      },
+      {
+        "name": "ffi_type_uint32"
+      },
+      {
+        "name": "ffi_type_uint64"
+      },
+      {
+        "name": "ffi_type_uint8"
+      },
+      {
+        "name": "ffi_type_void"
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jna.WString",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Boolean",
+    "fields": [
+      {
+        "name": "TYPE"
+      },
+      {
+        "name": "value"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "boolean"
+        ]
+      },
+      {
+        "name": "getBoolean",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Byte",
+    "fields": [
+      {
+        "name": "TYPE"
+      },
+      {
+        "name": "value"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "byte"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Character",
+    "fields": [
+      {
+        "name": "TYPE"
+      },
+      {
+        "name": "value"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "char"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Class",
+    "methods": [
+      {
+        "name": "getComponentType",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Double",
+    "fields": [
+      {
+        "name": "TYPE"
+      },
+      {
+        "name": "value"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "double"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Float",
+    "fields": [
+      {
+        "name": "TYPE"
+      },
+      {
+        "name": "value"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "float"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Integer",
+    "fields": [
+      {
+        "name": "TYPE"
+      },
+      {
+        "name": "value"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "int"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Long",
+    "fields": [
+      {
+        "name": "TYPE"
+      },
+      {
+        "name": "value"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Object",
+    "methods": [
+      {
+        "name": "toString",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.lang.ProcessBuilder$RedirectPipeImpl",
+    "fields": [
+      {
+        "name": "fd"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Short",
+    "fields": [
+      {
+        "name": "TYPE"
+      },
+      {
+        "name": "value"
+      }
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.String",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "byte[]"
+        ]
+      },
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "byte[]",
+          "java.lang.String"
+        ]
+      },
+      {
+        "name": "getBytes",
+        "parameterTypes": []
+      },
+      {
+        "name": "getBytes",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      },
+      {
+        "name": "toCharArray",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.lang.System",
+    "methods": [
+      {
+        "name": "getProperty",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.UnsatisfiedLinkError",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Void",
+    "fields": [
+      {
+        "name": "TYPE"
+      }
+    ]
+  },
+  {
+    "name": "java.lang.reflect.Method",
+    "methods": [
+      {
+        "name": "getParameterTypes",
+        "parameterTypes": []
+      },
+      {
+        "name": "getReturnType",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.nio.Buffer",
+    "methods": [
+      {
+        "name": "position",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.nio.ByteBuffer",
+    "methods": [
+      {
+        "name": "array",
+        "parameterTypes": []
+      },
+      {
+        "name": "arrayOffset",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.nio.CharBuffer",
+    "methods": [
+      {
+        "name": "array",
+        "parameterTypes": []
+      },
+      {
+        "name": "arrayOffset",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.nio.DoubleBuffer",
+    "methods": [
+      {
+        "name": "array",
+        "parameterTypes": []
+      },
+      {
+        "name": "arrayOffset",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.nio.FloatBuffer",
+    "methods": [
+      {
+        "name": "array",
+        "parameterTypes": []
+      },
+      {
+        "name": "arrayOffset",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.nio.IntBuffer",
+    "methods": [
+      {
+        "name": "array",
+        "parameterTypes": []
+      },
+      {
+        "name": "arrayOffset",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.nio.LongBuffer",
+    "methods": [
+      {
+        "name": "array",
+        "parameterTypes": []
+      },
+      {
+        "name": "arrayOffset",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.nio.ShortBuffer",
+    "methods": [
+      {
+        "name": "array",
+        "parameterTypes": []
+      },
+      {
+        "name": "arrayOffset",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "org.jline.nativ.Kernel32",
+    "fields": [
+      {
+        "name": "BACKGROUND_BLUE"
+      },
+      {
+        "name": "BACKGROUND_GREEN"
+      },
+      {
+        "name": "BACKGROUND_INTENSITY"
+      },
+      {
+        "name": "BACKGROUND_RED"
+      },
+      {
+        "name": "COMMON_LVB_GRID_HORIZONTAL"
+      },
+      {
+        "name": "COMMON_LVB_GRID_LVERTICAL"
+      },
+      {
+        "name": "COMMON_LVB_GRID_RVERTICAL"
+      },
+      {
+        "name": "COMMON_LVB_LEADING_BYTE"
+      },
+      {
+        "name": "COMMON_LVB_REVERSE_VIDEO"
+      },
+      {
+        "name": "COMMON_LVB_TRAILING_BYTE"
+      },
+      {
+        "name": "COMMON_LVB_UNDERSCORE"
+      },
+      {
+        "name": "FOREGROUND_BLUE"
+      },
+      {
+        "name": "FOREGROUND_GREEN"
+      },
+      {
+        "name": "FOREGROUND_INTENSITY"
+      },
+      {
+        "name": "FOREGROUND_RED"
+      },
+      {
+        "name": "FORMAT_MESSAGE_FROM_SYSTEM"
+      },
+      {
+        "name": "INVALID_HANDLE_VALUE"
+      },
+      {
+        "name": "STD_ERROR_HANDLE"
+      },
+      {
+        "name": "STD_INPUT_HANDLE"
+      },
+      {
+        "name": "STD_OUTPUT_HANDLE"
+      }
+    ]
+  },
+  {
+    "name": "org.jline.nativ.Kernel32$CONSOLE_SCREEN_BUFFER_INFO",
+    "fields": [
+      {
+        "name": "SIZEOF"
+      },
+      {
+        "name": "attributes"
+      },
+      {
+        "name": "cursorPosition"
+      },
+      {
+        "name": "maximumWindowSize"
+      },
+      {
+        "name": "size"
+      },
+      {
+        "name": "window"
+      }
+    ]
+  },
+  {
+    "name": "org.jline.nativ.Kernel32$COORD",
+    "fields": [
+      {
+        "name": "SIZEOF"
+      },
+      {
+        "name": "x"
+      },
+      {
+        "name": "y"
+      }
+    ]
+  },
+  {
+    "name": "org.jline.nativ.Kernel32$FOCUS_EVENT_RECORD",
+    "fields": [
+      {
+        "name": "SIZEOF"
+      },
+      {
+        "name": "setFocus"
+      }
+    ]
+  },
+  {
+    "name": "org.jline.nativ.Kernel32$INPUT_RECORD",
+    "fields": [
+      {
+        "name": "FOCUS_EVENT"
+      },
+      {
+        "name": "KEY_EVENT"
+      },
+      {
+        "name": "MENU_EVENT"
+      },
+      {
+        "name": "MOUSE_EVENT"
+      },
+      {
+        "name": "SIZEOF"
+      },
+      {
+        "name": "WINDOW_BUFFER_SIZE_EVENT"
+      },
+      {
+        "name": "eventType"
+      },
+      {
+        "name": "focusEvent"
+      },
+      {
+        "name": "keyEvent"
+      },
+      {
+        "name": "menuEvent"
+      },
+      {
+        "name": "mouseEvent"
+      },
+      {
+        "name": "windowBufferSizeEvent"
+      }
+    ]
+  },
+  {
+    "name": "org.jline.nativ.Kernel32$KEY_EVENT_RECORD",
+    "fields": [
+      {
+        "name": "CAPSLOCK_ON"
+      },
+      {
+        "name": "ENHANCED_KEY"
+      },
+      {
+        "name": "LEFT_ALT_PRESSED"
+      },
+      {
+        "name": "LEFT_CTRL_PRESSED"
+      },
+      {
+        "name": "NUMLOCK_ON"
+      },
+      {
+        "name": "RIGHT_ALT_PRESSED"
+      },
+      {
+        "name": "RIGHT_CTRL_PRESSED"
+      },
+      {
+        "name": "SCROLLLOCK_ON"
+      },
+      {
+        "name": "SHIFT_PRESSED"
+      },
+      {
+        "name": "SIZEOF"
+      },
+      {
+        "name": "controlKeyState"
+      },
+      {
+        "name": "keyCode"
+      },
+      {
+        "name": "keyDown"
+      },
+      {
+        "name": "repeatCount"
+      },
+      {
+        "name": "scanCode"
+      },
+      {
+        "name": "uchar"
+      }
+    ]
+  },
+  {
+    "name": "org.jline.nativ.Kernel32$MENU_EVENT_RECORD",
+    "fields": [
+      {
+        "name": "SIZEOF"
+      },
+      {
+        "name": "commandId"
+      }
+    ]
+  },
+  {
+    "name": "org.jline.nativ.Kernel32$MOUSE_EVENT_RECORD",
+    "fields": [
+      {
+        "name": "CAPSLOCK_ON"
+      },
+      {
+        "name": "DOUBLE_CLICK"
+      },
+      {
+        "name": "ENHANCED_KEY"
+      },
+      {
+        "name": "FROM_LEFT_1ST_BUTTON_PRESSED"
+      },
+      {
+        "name": "FROM_LEFT_2ND_BUTTON_PRESSED"
+      },
+      {
+        "name": "FROM_LEFT_3RD_BUTTON_PRESSED"
+      },
+      {
+        "name": "FROM_LEFT_4TH_BUTTON_PRESSED"
+      },
+      {
+        "name": "LEFT_ALT_PRESSED"
+      },
+      {
+        "name": "LEFT_CTRL_PRESSED"
+      },
+      {
+        "name": "MOUSE_HWHEELED"
+      },
+      {
+        "name": "MOUSE_MOVED"
+      },
+      {
+        "name": "MOUSE_WHEELED"
+      },
+      {
+        "name": "NUMLOCK_ON"
+      },
+      {
+        "name": "RIGHTMOST_BUTTON_PRESSED"
+      },
+      {
+        "name": "RIGHT_ALT_PRESSED"
+      },
+      {
+        "name": "RIGHT_CTRL_PRESSED"
+      },
+      {
+        "name": "SCROLLLOCK_ON"
+      },
+      {
+        "name": "SHIFT_PRESSED"
+      },
+      {
+        "name": "SIZEOF"
+      },
+      {
+        "name": "buttonState"
+      },
+      {
+        "name": "controlKeyState"
+      },
+      {
+        "name": "eventFlags"
+      },
+      {
+        "name": "mousePosition"
+      }
+    ]
+  },
+  {
+    "name": "org.jline.nativ.Kernel32$SMALL_RECT",
+    "fields": [
+      {
+        "name": "SIZEOF"
+      },
+      {
+        "name": "bottom"
+      },
+      {
+        "name": "left"
+      },
+      {
+        "name": "right"
+      },
+      {
+        "name": "top"
+      }
+    ]
+  },
+  {
+    "name": "org.jline.nativ.Kernel32$WINDOW_BUFFER_SIZE_RECORD",
+    "fields": [
+      {
+        "name": "SIZEOF"
+      },
+      {
+        "name": "size"
+      }
+    ]
+  },
+  {
+    "name": "sun.management.VMManagementImpl",
+    "fields": [
+      {
+        "name": "compTimeMonitoringSupport"
+      },
+      {
+        "name": "currentThreadCpuTimeSupport"
+      },
+      {
+        "name": "objectMonitorUsageSupport"
+      },
+      {
+        "name": "otherThreadCpuTimeSupport"
+      },
+      {
+        "name": "remoteDiagnosticCommandsSupport"
+      },
+      {
+        "name": "synchronizerUsageSupport"
+      },
+      {
+        "name": "threadAllocatedMemorySupport"
+      },
+      {
+        "name": "threadContentionMonitoringSupport"
+      }
+    ]
+  }
+]

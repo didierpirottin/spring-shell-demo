@@ -23,8 +23,16 @@ import static demo.jooq.generated.tables.Conferences.CONFERENCES;
 @RequiredArgsConstructor
 public class ReportCommand {
     private final DSLContext dslContext;
-
     private final Terminal terminal;
+
+    @Command(alias = "conf", description = "Provide a list of Java conferences in Europe")
+    @CommandAvailability(provider = "sessionActiveAvailability")
+    public Table javaConferences() throws IOException {
+        List<ConferencesRecord> conferences = fetchConferencesFromDB();
+        storeAsCsvFile(conferences);
+        return buildTable(conferences);
+    }
+
 
     private static void printRecord(ConferencesRecord conferencesRecord, CSVPrinter printer) {
         try {
@@ -52,7 +60,6 @@ public class ReportCommand {
                 .addAligner(SimpleHorizontalAligner.center);
 
         return tableBuilder
-                .addHeaderBorder(BorderStyle.fancy_heavy_quadruple_dash)
                 .addFullBorder(BorderStyle.fancy_light)
                 .build();
     }
@@ -65,28 +72,18 @@ public class ReportCommand {
         return headers;
     }
 
-    @Command(alias = "conf", description = "Provide a list of Java conferences in Europe")
-    @CommandAvailability(provider = "loginAvailability")
-    public Table javaConferences() throws IOException {
-        List<ConferencesRecord> conferences = fetchConferencesFromDB();
 
-        storeAsCsv(conferences);
-
-        return buildTable(conferences);
-
-    }
-
-    private void storeAsCsv(List<ConferencesRecord> conferences) throws IOException {
+    private void storeAsCsvFile(List<ConferencesRecord> conferences) throws IOException {
         FileWriter writer = new FileWriter("conferences.csv");
-        CSVFormat csvFormat = CSVFormat.DEFAULT.builder()
-                .setHeader(headerAsArray())
-                .build();
-
+        CSVFormat csvFormat = getCsvFormat();
         try (final CSVPrinter printer = new CSVPrinter(writer, csvFormat)) {
             conferences.forEach(conferencesRecord ->
                     printRecord(conferencesRecord, printer));
         }
+        writeMessageToTerminal();
+    }
 
+    private void writeMessageToTerminal() {
         terminal.writer().println(
                 new AttributedStringBuilder()
                         .append("Conference list has been stored in ")
@@ -94,6 +91,13 @@ public class ReportCommand {
                         .append("conferences.csv")
                         .toAttributedString()
                         .toAnsi());
+    }
+
+    private static CSVFormat getCsvFormat() {
+        CSVFormat csvFormat = CSVFormat.DEFAULT.builder()
+                .setHeader(headerAsArray())
+                .build();
+        return csvFormat;
     }
 
     private List<ConferencesRecord> fetchConferencesFromDB() {

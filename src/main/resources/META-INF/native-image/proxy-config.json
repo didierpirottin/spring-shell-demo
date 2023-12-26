@@ -1,60 +1,32 @@
 [
   {
-    "interfaces": [
-      "java.lang.reflect.GenericArrayType",
-      "org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy",
-      "java.io.Serializable"
-    ]
+    "interfaces":["java.lang.reflect.GenericArrayType","org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy","java.io.Serializable"]
   },
   {
-    "interfaces": [
-      "java.lang.reflect.ParameterizedType",
-      "org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy",
-      "java.io.Serializable"
-    ]
+    "interfaces":["java.lang.reflect.ParameterizedType","org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy","java.io.Serializable"]
   },
   {
-    "interfaces": [
-      "java.lang.reflect.TypeVariable",
-      "org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy",
-      "java.io.Serializable"
-    ]
+    "interfaces":["java.lang.reflect.TypeVariable","org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy","java.io.Serializable"]
   },
   {
-    "interfaces": [
-      "java.lang.reflect.WildcardType",
-      "org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy",
-      "java.io.Serializable"
-    ]
+    "interfaces":["java.lang.reflect.WildcardType","org.springframework.core.SerializableTypeWrapper$SerializableTypeProxy","java.io.Serializable"]
   },
   {
-    "interfaces": [
-      "java.sql.Connection"
-    ]
+    "interfaces":["java.sql.Connection"]
   },
   {
-    "interfaces": [
-      "org.jline.terminal.impl.jna.win.Kernel32"
-    ]
+    "interfaces":["org.jline.terminal.impl.jna.win.Kernel32"]
   },
   {
-    "interfaces": [
-      "org.springframework.boot.context.properties.ConfigurationProperties"
-    ]
+    "interfaces":["org.springframework.boot.context.properties.ConfigurationProperties"]
   },
   {
-    "interfaces": [
-      "org.springframework.context.event.EventListener"
-    ]
+    "interfaces":["org.springframework.context.event.EventListener"]
   },
   {
-    "interfaces": [
-      "org.springframework.jdbc.datasource.ConnectionProxy"
-    ]
+    "interfaces":["org.springframework.jdbc.datasource.ConnectionProxy"]
   },
   {
-    "interfaces": [
-      "sun.misc.SignalHandler"
-    ]
+    "interfaces":["sun.misc.SignalHandler"]
   }
 ]

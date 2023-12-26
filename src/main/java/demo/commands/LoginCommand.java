@@ -15,26 +15,21 @@ public class LoginCommand {
     private final LoginService loginService;
     private final InputService inputService;
 
-    @Command
+    @Command(description = "Login with user and password")
     @CommandAvailability(provider = "loginAvailability")
-    String login(
-            @Option(required = false) String user,
-            @Option(required = false) String password) {
-
+    String login(@Option(required = false) String user) {
         loginService.login(
                 ofNullable(user).orElseGet(
                         () -> inputService.getInput("Enter user name", "didier")),
-                ofNullable(password).orElseGet(
-                        () -> inputService.getMaskedInput("Enter password", "password")));
+                inputService.getMaskedInput("Enter password", "password"));
         return "Hello " + loginService.getLoggedUser() + ", you are now logged in !";
     }
 
-    @Command
-    @CommandAvailability(provider = "logoutAvailability")
+    @Command(description = "Logout current user")
+    @CommandAvailability(provider = "sessionActiveAvailability")
     String logout() {
         String user = loginService.getLoggedUser();
         loginService.logout();
         return "Bye " + user + ",you are now logged out !";
     }
-
 }

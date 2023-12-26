@@ -1,2 +1,5 @@
 # spring-shell-demo
-Demo of Spring Shell
+
+Demo video for talk proposal on Spring Shell.
+
+For any comment or question, please contact me : didier.pirottin@gmail.com
